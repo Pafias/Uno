@@ -1,0 +1,13 @@
+name: Uno
+version: '${project.version}'
+main: me.pafias.uno.Uno
+api-version: 1.16
+authors: [ Pafias ]
+description: UNO card game in Minecraft!
+website: 'https://github.com/Pafias'
+depend: [ ProtocolLib ]
+commands:
+  uno:
+    usage: /uno [subcommand]
+    aliases: [unogame]
+    description: Main uno command
