@@ -9,9 +9,9 @@ You need ProtocolLib in your server
 #
 Before starting a game make sure you setup the environment properly:
 
-You will need seats for the players. You can save their location by standing on the seat and using /uno setseat <playernumber> where playernumber is, well, the player number, so like 1, 2, 3, 4
+You will need seats for the players. You can save their location by standing on the seat and using **/uno setseat <playernumber>** where playernumber is, well, the player number, so like 1, 2, 3, 4
   
-You will also need to place an itemframe somewhere in front of each seat. That is where the discard pile card will appear. Use /uno setiframe <playernumber> while looking at the itemframe to save it's location.
+You will also need to place an itemframe somewhere in front of each seat. That is where the discard pile card will appear. Use **/uno setiframe <playernumber>** while looking at the itemframe to save it's location, where playernumber works the same as above.
 
 To draw a card just place a button somewhere reachable to all players.
   
@@ -27,6 +27,6 @@ Plugin jar file can be found in the releases tab or click [here](https://github.
 
 #
 
-The plugin only has 1 command: /uno
+The plugin only has 1 command: **/uno**
   
 Running the command will show the subcommands with a description of them
