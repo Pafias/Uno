@@ -4,6 +4,8 @@ UNO card game in Minecraft
 This is not a mod. This is a server plugin.
 
 Made for **Paper 1.16.5** - probably not compatible with other versions. (Maybe i'll make support for other versions later)
+
+You need ProtocolLib in your server
 #
 Before starting a game make sure you setup the environment properly:
 
@@ -22,3 +24,9 @@ Example world: [download world](http://pafias.tk/minecraft/uno.zip) or [download
 Example config.yml: [download](http://pafias.tk/minecraft/config.yml) (place it in the Uno folder in your plugins folder)
 
 Plugin jar file can be found in the releases tab or click [here](https://github.com/Pafias/Uno/releases/latest/download/Uno-1.0-SNAPSHOT.jar) if you're lazy
+
+#
+
+The plugin only has 1 command: /uno
+  
+Running the command will show the subcommands with a description of them
