@@ -17,12 +17,13 @@ public class GameManager {
         new BukkitRunnable() {
             @Override
             public void run() {
-                if (plugin.getSM().getGameManager().getGames().isEmpty())
+                if (plugin.getSM().getGameManager().getGames().isEmpty() && auto)
                     plugin.getSM().getGameManager().createGame();
             }
         }.runTaskTimer(plugin, 40, (5 * 20));
     }
 
+    public boolean auto;
     private Set<Game> games = new HashSet<>();
 
     public Set<Game> getGames() {

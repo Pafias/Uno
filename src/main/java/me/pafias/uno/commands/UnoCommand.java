@@ -44,6 +44,7 @@ public class UnoCommand implements CommandExecutor {
             sender.sendMessage(CC.translate("&7/" + label + " setiframe &f- Save coords of itemframe you're looking at"));
             sender.sendMessage(CC.translate("&7/" + label + " setseat &f- Save coords of seat you're standing on"));
             sender.sendMessage(CC.translate("&7/" + label + " create &f- Create a game"));
+            sender.sendMessage(CC.translate("&7/" + label + " auto &f- Toggle automatic game creation"));
             sender.sendMessage(CC.translate("&7/" + label + " stop &f- Stop the game you're in"));
             sender.sendMessage(CC.translate("&7/" + label + " addplayer <player/*> &f- Add player/everyone to random game"));
             sender.sendMessage(CC.translate("&7/" + label + " removeplayer <player/*> &f- Remove player/everyone from their game"));
@@ -252,6 +253,10 @@ public class UnoCommand implements CommandExecutor {
             }
             user.getGame().removePlayer(user);
             sender.sendMessage(CC.translate("&aUser removed."));
+        } else if (args[0].equalsIgnoreCase("auto")) {
+            if (!sender.hasPermission("uno.auto")) return true;
+            plugin.getSM().getGameManager().auto = !plugin.getSM().getGameManager().auto;
+            sender.sendMessage(CC.translate("&6Automatic game creation: " + (plugin.getSM().getGameManager().auto ? "&aON" : "&cOFF")));
         }
         return true;
     }
